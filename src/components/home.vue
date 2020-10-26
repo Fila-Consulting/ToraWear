@@ -23,18 +23,10 @@
     </div>
 
       <div class="fifthLine">
-        <div class="aboutUs">
+        <div class="aboutUs "><h2>{{ About}}</h2></div>
+        <div></div>
 
-        <img src="../assets/aboutUs.jpg" alt="About Us">
-
-               <div class="overlay">{{ About }}
-
-                 </div>
-        </div>
-
-    </div>
-
-
+      </div>
   </div>
 </template>
 
@@ -135,33 +127,23 @@ display: flex;
     width: 100%;
     height:750px ;
     border: 1px solid black;
+
+ background-image: url("../assets/aboutUs.jpg");
+	background-size: cover;
+	background-position: center;
+
+
+display: grid;
+grid-template-columns: 50% 50%;
 }
 
-
-
-/* do Poprawy*/
 .aboutUs{
-  height: 100%;
-  width: 100%;;
-  background-color: black;
+background: rgba(0, 0, 0, 0.726);
+  color: white;
 }
 
 
-.aboutUs img{
- /* height: 100%; */
-  background-size: cover;
-  float: left;
-  /*padding: 0px 17% 0px; */
-}
 
-.overlay{
-position: absolute;
-height: 100%;
-width: 35%;
-color:Black;
-background-color: white;
-filter: opacity(50%);
-}
 
 
 </style>
