@@ -1,93 +1,70 @@
 <template>
-  <div id="custom-bootstrap-menu" class="navbar navbar-default navbar-static-top" role="navigation">
-    <div class="container-fluid">
-      <div class="navbar-header">
-        <a class="navbar-brand" href="#">Calvue</a>
-        <button
-          type="button"
-          class="navbar-toggle"
-          data-toggle="collapse"
-          data-target=".navbar-menubuilder"
-        >
-          <span class="sr-only">Toggle navigation</span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-        </button>
-      </div>
-      <div class="collapse navbar-collapse navbar-menubuilder">
-        <ul class="nav navbar-nav navbar-left">
-          <li>
-            <a href="/">Home</a>
-          </li>
-          <li>
-            <a href="/products">Products</a>
-          </li>
-          <li>
-            <a href="/about-us">About Us</a>
-          </li>
-        </ul>
-      </div>
+  <header class="navbar navbar-inverse navbar-fixed-top bs-docs-nav" role="banner">
+  <div class="container">
+    <div class="navbar-header">
+      <button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".bs-navbar-collapse">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a href="./" class="navbar-brand">Tora Shop</a>
     </div>
+    <nav class="collapse navbar-collapse bs-navbar-collapse" role="navigation">
+      <ul class="nav navbar-nav">
+        <li>
+          <a href="#">Strona Główna</a>
+        </li>
+        <!--
+				<li class="dropdown">
+	        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
+	        <ul class="dropdown-menu">
+	          <li><a href="#">Action</a></li>
+	          <li><a href="#">Another action</a></li>
+	          <li><a href="#">Something else here</a></li>
+	          <li><a href="#">Separated link</a></li>
+	          <li><a href="#">One more separated link</a></li>
+	        </ul>
+	      </li>
+        -->
+        <li>
+          <a href="#">Sklep</a>
+        </li>
+        <li>
+          <a href="#">O nas</a>
+        </li>
+        <li class="active">
+          <a href="#">Kontakt</a>
+        </li>
+      </ul>
+    </nav>
   </div>
+</header>
 </template>
 
 <style>
-#custom-bootstrap-menu.navbar-default .navbar-brand {
-  color: rgba(255, 98, 0);
+.navbar-inverse { background-color: #c7c7c7bb}
+.navbar-inverse .navbar-nav>.active>a:hover,.navbar-inverse .navbar-nav>li>a:hover, .navbar-inverse .navbar-nav>li>a:focus { background-color: #8A8A8A}
+.navbar-inverse .navbar-nav>.active>a,.navbar-inverse .navbar-nav>.open>a,.navbar-inverse .navbar-nav>.open>a, .navbar-inverse .navbar-nav>.open>a:hover,.navbar-inverse .navbar-nav>.open>a, .navbar-inverse .navbar-nav>.open>a:hover, .navbar-inverse .navbar-nav>.open>a:focus { background-color: #707070c4}
+.dropdown-menu { background-color: #FFFFFF}
+.dropdown-menu>li>a:hover, .dropdown-menu>li>a:focus { background-color: #8A8A8A}
+.navbar-inverse { background-image: none; }
+.dropdown-menu>li>a:hover, .dropdown-menu>li>a:focus { background-image: none; }
+.navbar-inverse { border-color: #080808}
+.navbar-inverse .navbar-brand {
+  color: #000000
 }
-#custom-bootstrap-menu.navbar-default {
-  font-size: 14px;
-  background-color: rgba(248, 248, 248, 1);
-  border-bottom-width: 1px;
-}
-#custom-bootstrap-menu.navbar-default .navbar-nav > li > a {
-  color: rgba(51, 51, 51, 1);
-  background-color: rgba(248, 248, 248, 1);
-}
-#custom-bootstrap-menu.navbar-default .navbar-nav > li > a:hover,
-#custom-bootstrap-menu.navbar-default .navbar-nav > li > a:focus {
-  color: rgba(51, 51, 51, 1);
-  background-color: rgba(194, 194, 194, 1);
-  background: -webkit-linear-gradient(
-    top,
-    rgba(255, 98, 0) 0%,
-    rgb(255, 255, 255) 100%
-  );
-  background: linear-gradient(
-    to bottom,
-    rgba(255, 98, 0) 0%,
-    rgb(255, 255, 255) 100%
-  );
-}
-#custom-bootstrap-menu.navbar-default .navbar-nav > .active > a,
-#custom-bootstrap-menu.navbar-default .navbar-nav > .active > a:hover,
-#custom-bootstrap-menu.navbar-default .navbar-nav > .active > a:focus {
-  color: rgba(51, 51, 51, 1);
-  background-color: rgba(194, 194, 194, 1);
-  background: -webkit-linear-gradient(
-    top,
-    rgba(102, 102, 102, 1) 0%,
-    rgba(194, 194, 194, 1) 100%
-  );
-  background: linear-gradient(
-    to bottom,
-    rgba(102, 102, 102, 1) 0%,
-    rgba(194, 194, 194, 1) 100%
-  );
-}
-#custom-bootstrap-menu.navbar-default .navbar-toggle {
-  border-color: #c2c2c2;
-}
-#custom-bootstrap-menu.navbar-default .navbar-toggle:hover,
-#custom-bootstrap-menu.navbar-default .navbar-toggle:focus {
-  background-color: #c2c2c2;
-}
-#custom-bootstrap-menu.navbar-default .navbar-toggle .icon-bar {
-  background-color: #c2c2c2;
-}
-#custom-bootstrap-menu.navbar-default .navbar-toggle:hover .icon-bar,
-#custom-bootstrap-menu.navbar-default .navbar-toggle:focus .icon-bar {
-  background-color: #f8f8f8;
-}
+.navbar-inverse .navbar-brand:hover { color: #FFFFFF}
+.navbar-inverse .navbar-nav>li>a { color: #000000}
+.navbar-inverse .navbar-nav>li>a:hover, .navbar-inverse .navbar-nav>li>a:focus { color: #FFFFFF}
+.navbar-inverse .navbar-nav>.active>a,.navbar-inverse .navbar-nav>.open>a, .navbar-inverse .navbar-nav>.open>a:hover, .navbar-inverse .navbar-nav>.open>a:focus { color: #FFFFFF}
+.navbar-inverse .navbar-nav>.active>a:hover, .navbar-inverse .navbar-nav>.active>a:focus { color: #FFFFFF}
+.dropdown-menu>li>a { color: #333333}
+.dropdown-menu>li>a:hover, .dropdown-menu>li>a:focus { color: #FFFFFF}
+.navbar-inverse .navbar-nav>.dropdown>a .caret { border-top-color: #999999}
+.navbar-inverse .navbar-nav>.dropdown>a:hover .caret { border-top-color: #FFFFFF}
+.navbar-inverse .navbar-nav>.dropdown>a .caret { border-bottom-color: #999999}
+.navbar-inverse .navbar-nav>.dropdown>a:hover .caret { border-bottom-color: #FFFFFF}
+
+
 </style>

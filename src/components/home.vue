@@ -1,13 +1,20 @@
 <template>
   <div class="main">
     <div class="toraWearPic">
-      <div class="logo">
-       <!-- <img src="../assets/logo.jpg" alt="Tora Shop Logo"> -->
-      </div>
+
     </div>
 
   <div class="secondLine">
-    <div class="leftPicTora"></div>
+    <div class="leftPicTora">
+
+
+      <h1>Nowe Przedmioty!</h1>
+
+      <h3>Kup Teraz!</h3> <!-- Link do zrobienia  -->
+
+
+
+    </div>
       <div class="rightPicTora"></div>
   </div>
 
@@ -41,23 +48,25 @@ export default {
 }
 </script>
 
-<!-- Add "scoped" attribute to limit CSS to this component only -->
 <style scoped>
-/* do Poprawy*/
+
+
   .toraWearPic{
     width: 100%;
-    height:900px ;
+    height:1188.13px ;
     border: 1px solid black;
+    background-image: url("../assets/blackWhiteDog.jpg");
+    background-size: cover;
+    background-position: center;
 
-  background-position: center;
   display: grid;
-  grid-template-columns: 50% 50%;
+  grid-template-columns: 100%;
 
   }
 
 .secondLine{
     width: 100%;
-    height:400px;
+    height:900px;
     border: 1px solid black;
   background-size: cover;
   background-position: center;
@@ -67,9 +76,20 @@ export default {
 
    .leftPicTora{
     border: 1px solid black;
+    text-align: center;
+    display: grid;
+    justify-content: center;
+    align-content: center;
    }
+
+
+
+
   .rightPicTora{
     border: 1px solid black;
+    background-image: url("../assets/smyczWhite.jpg");
+    background-size: cover;
+    background-position: center;
 
   }
 
